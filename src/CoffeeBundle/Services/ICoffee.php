@@ -2,22 +2,24 @@
 
 namespace CoffeeBundle\Models;
 
-use AppBundle\Entities\Coffee;
+use CoffeeBundle\ViewModels\CoffeeVM;
+use CoffeeBundle\ViewModels\ExtraVM;
+use CoffeeBundle\ViewModels\OrderVM;
 
 interface ICoffee
 {
     /**
+     * Gets all the available coffees and returns an array of coffee view models
+     *
      * @return CoffeeVM[] | string
      */
     public function getCoffee();
 
     /**
-     * @return ExtraVM[] | string
-     */
-    public function getExtras();
-
-    /**
+     * Adds the order to the database and returns the record ID
+     *
+     * @param OrderVM $order The order to be added to the database
      * @return int | string
      */
-    public function addOrder();
+    public function addOrder(OrderVM $order);
 }

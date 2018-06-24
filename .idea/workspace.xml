@@ -1,7 +1,431 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71902b55-88ce-420b-a8c5-8a35913b35b0" name="Default" comment="" />
+    <list default="true" id="71902b55-88ce-420b-a8c5-8a35913b35b0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Converters/ModelHelpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoffeeBundle/Models/OrderModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoffeeBundle/Resources/views/CoffeeSelection.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoffeeBundle/Resources/views/OrderSummary.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoffeeBundle/Services/IOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entities/Coffee.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Coffee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entities/Extra.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entities/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entities/OrderLine.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repos/CoffeeRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Repos/CoffeeRepo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/CoffeeVM.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/CoffeeVM.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderLineVM.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel.legacy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/appDevDebugProjectContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getAnnotations_CacheService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getAnnotations_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getArgumentResolver_DefaultService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getArgumentResolver_RequestAttributeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getArgumentResolver_RequestService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getArgumentResolver_ServiceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getArgumentResolver_SessionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getArgumentResolver_VariadicService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getCacheClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getCacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getCache_DefaultClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getCache_GlobalClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getCache_SystemClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConfig_Resource_SelfCheckingResourceCheckerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_CommandLoaderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_AboutService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_AssetsInstallService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_CacheClearService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_CachePoolClearService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_CachePoolPruneService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_CacheWarmupService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_ConfigDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_ConfigDumpReferenceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_ContainerDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_DebugAutowiringService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_EventDispatcherDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_FormDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_RouterDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_RouterMatchService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_XliffLintService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_Command_YamlLintService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getConsole_ErrorListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDebug_DumpListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDebug_FileLinkFormatter_UrlFormatService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDefaultControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDependencyInjection_Config_ContainerParametersResourceCheckerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDeprecated_Form_RegistryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDeprecated_Form_Registry_CsrfService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrineCache_ContainsCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrineCache_DeleteCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrineCache_FlushCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrineCache_StatsCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_CacheClearMetadataCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_CacheClearQueryCacheCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_CacheClearResultCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_CacheCollectionRegionCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_ClearEntityRegionCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_ClearQueryRegionCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_DatabaseCreateCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_DatabaseDropCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_DatabaseImportCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Dbal_ConnectionFactoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Dbal_DefaultConnectionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_EnsureProductionSettingsCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_GenerateEntitiesCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_MappingConvertCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_MappingImportCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_MappingInfoCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Orm_DefaultEntityListenerResolverService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Orm_DefaultEntityManagerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Orm_DefaultEntityManager_PropertyInfoExtractorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Orm_DefaultListeners_AttachEntityListenersService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Orm_DefaultManagerConfiguratorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Orm_ProxyCacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_Orm_Validator_UniqueService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_QueryDqlCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_QuerySqlCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_SchemaCreateCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_SchemaDropCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_SchemaUpdateCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getDoctrine_SchemaValidateCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getFileLocatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getFilesystemService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_FactoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_RegistryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_ResolvedTypeFactoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_ServerParamsService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeExtension_CsrfService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeExtension_Form_DataCollectorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeExtension_Form_HttpFoundationService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeExtension_Form_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeExtension_Repeated_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeExtension_Submit_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeExtension_Upload_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeGuesser_DoctrineService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_TypeGuesser_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_BirthdayService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_ButtonService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_CheckboxService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_ChoiceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_CollectionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_CountryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_CurrencyService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_DateService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_DatetimeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_EmailService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_EntityService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_FileService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_FormService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_HiddenService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_IntegerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_LanguageService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_LocaleService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_MoneyService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_NumberService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_PasswordService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_PercentService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_RadioService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_RangeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_RepeatedService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_ResetService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_SearchService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_SubmitService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_TextService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_TextareaService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_TimeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_TimezoneService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getForm_Type_UrlService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getFragment_HandlerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getFragment_Renderer_HincludeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getFragment_Renderer_InlineService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getHttpExceptionListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getKernel_ClassCache_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getMonolog_Handler_NullInternalService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getMonolog_Logger_ConsoleService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getMonolog_Logger_DoctrineService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getMonolog_Logger_SecurityService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getPropertyAccessorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getRedirectControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getRouter_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getRouting_LoaderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_AccessListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_AccessMapService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Access_AuthenticatedVoterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Access_ExpressionVoterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Access_SimpleRoleVoterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_AuthenticationUtilsService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Authentication_GuardHandlerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Authentication_Listener_Anonymous_MainService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Authentication_Provider_Anonymous_MainService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_ChannelListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Command_UserPasswordEncoderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_ContextListener_0Service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Csrf_TokenManagerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_EncoderFactoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Firewall_Map_Context_DevService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Firewall_Map_Context_MainService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_PasswordEncoderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_RequestMatcher_Zfhj2lwService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_UserValueResolverService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_User_Provider_Concrete_InMemoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSecurity_Validator_UserPasswordService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSensioDistribution_SecurityCheckerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSensioDistribution_SecurityChecker_CommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getServiceLocator_Sr6ctxeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getServicesResetterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSessionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSession_HandlerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSession_Storage_FilesystemService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSession_Storage_MetadataBagService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSession_Storage_NativeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSession_Storage_PhpBridgeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSwiftmailer_EmailSender_ListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSwiftmailer_Mailer_DefaultService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSwiftmailer_Mailer_Default_Plugin_MessageloggerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSwiftmailer_Mailer_Default_SpoolService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSwiftmailer_Mailer_Default_TransportService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSwiftmailer_Mailer_Default_Transport_EventdispatcherService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getSwiftmailer_Mailer_Default_Transport_RealService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTemplateControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTemplating_Helper_LogoutUrlService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTemplating_Helper_SecurityService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_Command_DebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_Command_LintService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_Controller_ExceptionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_Controller_PreviewErrorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_ExceptionListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_Form_RendererService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_Runtime_HttpkernelService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_TemplateCacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getTwig_Translation_ExtractorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getValidator_EmailService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getValidator_ExpressionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getValidator_Mapping_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getVarDumper_CliDumperService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getWebProfiler_Controller_ExceptionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getWebProfiler_Controller_ProfilerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getWebProfiler_Controller_RouterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getWebServer_Command_ServerLogService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getWebServer_Command_ServerRunService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getWebServer_Command_ServerStartService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getWebServer_Command_ServerStatusService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/getWebServer_Command_ServerStopService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/Container8wqcnel/removed-ids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/appDevDebugProjectContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getAnnotations_CacheService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getAnnotations_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getArgumentResolver_DefaultService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getArgumentResolver_RequestAttributeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getArgumentResolver_RequestService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getArgumentResolver_ServiceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getArgumentResolver_SessionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getArgumentResolver_VariadicService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getCacheClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getCacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getCache_DefaultClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getCache_GlobalClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getCache_SystemClearerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getCoffeeControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConfig_Resource_SelfCheckingResourceCheckerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_CommandLoaderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_AboutService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_AssetsInstallService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_CacheClearService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_CachePoolClearService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_CachePoolPruneService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_CacheWarmupService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_ConfigDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_ConfigDumpReferenceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_ContainerDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_DebugAutowiringService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_EventDispatcherDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_FormDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_RouterDebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_RouterMatchService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_XliffLintService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_Command_YamlLintService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getConsole_ErrorListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDebug_DumpListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDebug_FileLinkFormatter_UrlFormatService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDefaultControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDependencyInjection_Config_ContainerParametersResourceCheckerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDeprecated_Form_RegistryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDeprecated_Form_Registry_CsrfService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrineCache_ContainsCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrineCache_DeleteCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrineCache_FlushCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrineCache_StatsCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_CacheClearMetadataCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_CacheClearQueryCacheCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_CacheClearResultCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_CacheCollectionRegionCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_ClearEntityRegionCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_ClearQueryRegionCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_DatabaseCreateCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_DatabaseDropCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_DatabaseImportCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Dbal_ConnectionFactoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Dbal_DefaultConnectionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_EnsureProductionSettingsCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_GenerateEntitiesCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_MappingConvertCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_MappingImportCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_MappingInfoCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Orm_DefaultEntityListenerResolverService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Orm_DefaultEntityManagerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Orm_DefaultEntityManager_PropertyInfoExtractorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Orm_DefaultListeners_AttachEntityListenersService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Orm_DefaultManagerConfiguratorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Orm_ProxyCacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_Orm_Validator_UniqueService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_QueryDqlCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_QuerySqlCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_SchemaCreateCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_SchemaDropCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_SchemaUpdateCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getDoctrine_SchemaValidateCommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getFileLocatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getFilesystemService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_FactoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_RegistryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_ResolvedTypeFactoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_ServerParamsService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeExtension_CsrfService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeExtension_Form_DataCollectorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeExtension_Form_HttpFoundationService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeExtension_Form_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeExtension_Repeated_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeExtension_Submit_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeExtension_Upload_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeGuesser_DoctrineService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_TypeGuesser_ValidatorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_BirthdayService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_ButtonService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_CheckboxService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_ChoiceService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_CollectionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_CountryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_CurrencyService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_DateService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_DatetimeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_EmailService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_EntityService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_FileService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_FormService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_HiddenService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_IntegerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_LanguageService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_LocaleService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_MoneyService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_NumberService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_PasswordService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_PercentService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_RadioService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_RangeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_RepeatedService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_ResetService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_SearchService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_SubmitService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_TextService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_TextareaService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_TimeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_TimezoneService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getForm_Type_UrlService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getFragment_HandlerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getFragment_Renderer_HincludeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getFragment_Renderer_InlineService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getHttpExceptionListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getKernel_ClassCache_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getMonolog_Handler_NullInternalService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getMonolog_Logger_ConsoleService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getMonolog_Logger_DoctrineService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getMonolog_Logger_SecurityService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getPropertyAccessorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getRedirectControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getRouter_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getRouting_LoaderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_AccessListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_AccessMapService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Access_AuthenticatedVoterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Access_ExpressionVoterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Access_SimpleRoleVoterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_AuthenticationUtilsService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Authentication_GuardHandlerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Authentication_Listener_Anonymous_MainService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Authentication_Provider_Anonymous_MainService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_ChannelListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Command_UserPasswordEncoderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_ContextListener_0Service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Csrf_TokenManagerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_EncoderFactoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Firewall_Map_Context_DevService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Firewall_Map_Context_MainService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_PasswordEncoderService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_RequestMatcher_Zfhj2lwService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_UserValueResolverService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_User_Provider_Concrete_InMemoryService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSecurity_Validator_UserPasswordService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSensioDistribution_SecurityCheckerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSensioDistribution_SecurityChecker_CommandService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getServiceLocator_Sr6ctxeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getServicesResetterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSessionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSession_HandlerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSession_Storage_FilesystemService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSession_Storage_MetadataBagService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSession_Storage_NativeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSession_Storage_PhpBridgeService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSwiftmailer_EmailSender_ListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSwiftmailer_Mailer_DefaultService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSwiftmailer_Mailer_Default_Plugin_MessageloggerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSwiftmailer_Mailer_Default_SpoolService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSwiftmailer_Mailer_Default_TransportService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSwiftmailer_Mailer_Default_Transport_EventdispatcherService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getSwiftmailer_Mailer_Default_Transport_RealService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTemplateControllerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTemplating_Helper_LogoutUrlService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTemplating_Helper_SecurityService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_Command_DebugService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_Command_LintService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_Controller_ExceptionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_Controller_PreviewErrorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_ExceptionListenerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_Form_RendererService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_Runtime_HttpkernelService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_TemplateCacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getTwig_Translation_ExtractorService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getValidator_EmailService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getValidator_ExpressionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getValidator_Mapping_CacheWarmerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getVarDumper_CliDumperService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getWebProfiler_Controller_ExceptionService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getWebProfiler_Controller_ProfilerService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getWebProfiler_Controller_RouterService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getWebServer_Command_ServerLogService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getWebServer_Command_ServerRunService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getWebServer_Command_ServerStartService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getWebServer_Command_ServerStatusService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/getWebServer_Command_ServerStopService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerQvac33w/removed-ids.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.php.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainer.xml.meta" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,20 +438,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CoffeeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CoffeeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="273">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="e#43#81#0#PHP" expanded="true" />
+                <element signature="e#1014#1676#0#PHP" />
+                <element signature="e#1714#1729#1#PHP" expanded="true" />
+                <element signature="e#1727#1762#0#PHP" expanded="true" />
+                <element signature="e#1978#2010#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ICoffee.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php">
+      <file leaf-file-name="OrderModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Models/OrderModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="336">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -35,8 +466,31 @@
       <file leaf-file-name="CoffeeModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="126">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding>
+                <element signature="e#273#2755#0#PHP" />
+                <element signature="e#340#386#0#PHP" />
+                <element signature="e#409#448#0#PHP" />
+                <element signature="e#475#506#0#PHP" />
+                <element signature="e#534#687#0#PHP" />
+                <element signature="e#692#895#0#PHP" />
+                <element signature="e#902#1629#0#PHP" />
+                <element signature="e#944#1623#0#PHP" />
+                <element signature="e#1104#1224#0#PHP" />
+                <element signature="e#1265#1623#0#PHP" />
+                <element signature="e#1376#1613#0#PHP" />
+                <element signature="e#1512#1613#0#PHP" />
+                <element signature="e#1635#2751#0#PHP" />
+                <element signature="e#1690#2745#0#PHP" />
+                <element signature="e#1788#1891#0#PHP" />
+                <element signature="e#1906#2043#0#PHP" />
+                <element signature="e#2073#2196#0#PHP" />
+                <element signature="e#2211#2335#0#PHP" />
+                <element signature="e#2394#2745#0#PHP" />
+                <element signature="e#2505#2735#0#PHP" />
+                <element signature="e#2641#2735#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,54 +498,72 @@
       <file leaf-file-name="OrderVM.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderLineVM.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderLineVM.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="CoffeeVM.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/CoffeeVM.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="126">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
-                <element signature="e#330#360#0#PHP" />
-                <element signature="e#365#440#0#PHP" />
-                <element signature="e#442#505#0#PHP" />
-                <element signature="e#516#640#0#PHP" />
-                <element signature="e#646#679#0#PHP" />
-                <element signature="e#684#749#0#PHP" />
-                <element signature="e#755#818#0#PHP" />
-                <element signature="e#823#927#0#PHP" />
-                <element signature="e#933#963#0#PHP" />
-                <element signature="e#968#1049#0#PHP" />
-                <element signature="e#1055#1123#0#PHP" />
-                <element signature="e#1128#1264#0#PHP" />
-                <element signature="e#1270#1302#0#PHP" />
-                <element signature="e#1307#1372#0#PHP" />
-                <element signature="e#1378#1440#0#PHP" />
-                <element signature="e#1445#1549#0#PHP" />
+                <element signature="e#99#1924#0#PHP" />
+                <element signature="e#119#153#0#PHP" />
+                <element signature="e#181#221#0#PHP" />
+                <element signature="e#247#279#0#PHP" />
+                <element signature="e#306#432#0#PHP" />
+                <element signature="e#458#599#0#PHP" />
+                <element signature="e#363#393#0#PHP" />
+                <element signature="e#398#469#0#PHP" />
+                <element signature="e#475#536#0#PHP" />
+                <element signature="e#541#655#0#PHP" />
+                <element signature="e#661#697#0#PHP" />
+                <element signature="e#702#769#0#PHP" />
+                <element signature="e#775#840#0#PHP" />
+                <element signature="e#845#951#0#PHP" />
+                <element signature="e#957#992#0#PHP" />
+                <element signature="e#997#1066#0#PHP" />
+                <element signature="e#1072#1137#0#PHP" />
+                <element signature="e#1142#1252#0#PHP" />
+                <element signature="e#1527#1557#0#PHP" />
+                <element signature="e#1562#1629#0#PHP" />
+                <element signature="e#1635#1694#0#PHP" />
+                <element signature="e#1699#1805#0#PHP" />
+                <element signature="e#1811#1842#0#PHP" />
+                <element signature="e#1847#1912#0#PHP" />
+                <element signature="e#1918#1977#0#PHP" />
+                <element signature="e#1982#2084#0#PHP" />
+                <element signature="e#1557#1922#0#PHP" />
+                <element signature="e#1657#1888#0#PHP" />
+                <element signature="e#1706#1837#0#PHP" />
+                <element signature="e#1740#1823#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Order.php">
+      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="525">
+              <caret line="99" column="29" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="29" />
+              <folding>
+                <element signature="e#70#140#0#PHP" />
+                <element signature="e#159#326#0#PHP" />
+                <element signature="e#354#501#0#PHP" />
+                <element signature="e#527#641#0#PHP" />
+                <element signature="e#668#781#0#PHP" />
+                <element signature="e#1828#1859#0#PHP" />
+                <element signature="e#1864#1939#0#PHP" />
+                <element signature="e#1945#1986#0#PHP" />
+                <element signature="e#1991#2087#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="twig" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -99,10 +571,12 @@
       <find>autolo</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entities/Products.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entities/Order.php" />
@@ -110,16 +584,26 @@
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/tests/CoffeeBundle/Services/ICoffee.php" />
         <option value="$PROJECT_DIR$/tests/CoffeeBundle/Models/CoffeeModel.php" />
-        <option value="$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php" />
-        <option value="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entities/Product.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repos/ProductRepo.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entities/Coffee.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repos/CoffeeRepo.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entities/Extra.php" />
-        <option value="$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php" />
         <option value="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/ProductVM.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entities/Extra.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entities/Coffee.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Extra.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Converters/ModelConverter.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Converters/ModelHelpers.php" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/ExtraVM.php" />
         <option value="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/CoffeeVM.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repos/CoffeeRepo.php" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Order.php" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/Services/IOrder.php" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/Models/OrderModel.php" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/Resources/views/OrderSummary.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/Resources/views/CoffeeSelection.html.twig" />
+        <option value="$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php" />
       </list>
     </option>
   </component>
@@ -187,7 +671,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -197,55 +681,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CoffeeMaker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CoffeeMaker" type="462c0819:PsiDirectoryNode" />
+              <item name="CoffeeApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeeApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CoffeeMaker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CoffeeMaker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CoffeeMaker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CoffeeMaker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CoffeeMaker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CoffeeMaker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CoffeeMaker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CoffeeMaker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CoffeeBundle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CoffeeMaker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CoffeeMaker" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CoffeeBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="ViewModels" type="462c0819:PsiDirectoryNode" />
+              <item name="CoffeeApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/var/www/CoffeeMaker/src/AppBundle/Entities/Order.php" />
+    <property name="SearchEverywhereHistoryKey" value="Coffee&#9;FILE&#9;file://C:/var/www/CoffeeApp/src/AppBundle/Entities/Coffee.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -255,7 +713,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Symfony.ProfilerSettingsForm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -324,14 +782,16 @@
       <updated>1529767584458</updated>
       <workItem from="1529767585758" duration="1953000" />
       <workItem from="1529769619949" duration="1249000" />
+      <workItem from="1529837660575" duration="319000" />
+      <workItem from="1529838024523" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3202000" />
+    <option name="totallyTimeSpent" value="7528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -342,25 +802,46 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32998884" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25320512" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2596154" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,6 +851,188 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Coffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repos/CoffeeRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#35#66#0#PHP" expanded="true" />
+            <element signature="e#346#364#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Extra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/CoffeeVM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#64#98#0#PHP" />
+            <element signature="e#127#164#0#PHP" />
+            <element signature="e#189#223#0#PHP" />
+            <element signature="e#260#290#0#PHP" />
+            <element signature="e#295#368#0#PHP" />
+            <element signature="e#374#437#0#PHP" />
+            <element signature="e#442#561#0#PHP" />
+            <element signature="e#567#600#0#PHP" />
+            <element signature="e#605#670#0#PHP" />
+            <element signature="e#676#738#0#PHP" />
+            <element signature="e#743#846#0#PHP" />
+            <element signature="e#852#882#0#PHP" />
+            <element signature="e#887#968#0#PHP" />
+            <element signature="e#974#1041#0#PHP" />
+            <element signature="e#1046#1181#0#PHP" />
+            <element signature="e#1191#1710#0#PHP" />
+            <element signature="e#1291#1676#0#PHP" />
+            <element signature="e#1340#1471#0#PHP" />
+            <element signature="e#1374#1457#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderLineVM.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repos/ExtraRepo.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repos/CoffeeRepo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderLineVM.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/CoffeeVM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Coffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1659">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="e#208#376#0#PHP" />
+            <element signature="e#405#530#0#PHP" />
+            <element signature="e#555#662#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderLineVM.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/CoffeeVM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -388,14 +1051,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="e#35#66#0#PHP" expanded="true" />
-            <element signature="e#346#364#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Coffee.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Coffee.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" selection-start-line="14" selection-end-line="42" selection-end-column="25" />
@@ -413,24 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="e#330#360#0#PHP" />
-            <element signature="e#365#440#0#PHP" />
-            <element signature="e#442#505#0#PHP" />
-            <element signature="e#516#640#0#PHP" />
-            <element signature="e#646#679#0#PHP" />
-            <element signature="e#684#749#0#PHP" />
-            <element signature="e#755#818#0#PHP" />
-            <element signature="e#823#927#0#PHP" />
-            <element signature="e#933#963#0#PHP" />
-            <element signature="e#968#1049#0#PHP" />
-            <element signature="e#1055#1123#0#PHP" />
-            <element signature="e#1128#1264#0#PHP" />
-            <element signature="e#1270#1302#0#PHP" />
-            <element signature="e#1307#1372#0#PHP" />
-            <element signature="e#1378#1440#0#PHP" />
-            <element signature="e#1445#1549#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -448,47 +1089,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/OrderLine.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/OrderLine.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding>
-            <element signature="e#38#64#0#PHP" />
-            <element signature="e#153#1083#0#PHP" />
-            <element signature="e#175#210#0#PHP" />
-            <element signature="e#380#409#0#PHP" />
-            <element signature="e#595#630#0#PHP" />
-            <element signature="e#730#776#0#PHP" />
-            <element signature="e#883#914#0#PHP" />
-            <element signature="e#1009#1135#0#PHP" />
-            <element signature="e#1160#1190#0#PHP" />
-            <element signature="e#1322#1354#0#PHP" />
-            <element signature="e#1359#1426#0#PHP" />
-            <element signature="e#1432#1495#0#PHP" />
-            <element signature="e#1500#1608#0#PHP" />
-            <element signature="e#1614#1644#0#PHP" />
-            <element signature="e#1649#1724#0#PHP" />
-            <element signature="e#1730#1795#0#PHP" />
-            <element signature="e#1800#1924#0#PHP" />
-            <element signature="e#1930#1963#0#PHP" />
-            <element signature="e#1968#2047#0#PHP" />
-            <element signature="e#2053#2123#0#PHP" />
-            <element signature="e#2128#2260#0#PHP" />
-            <element signature="e#2266#2296#0#PHP" />
-            <element signature="e#2301#2364#0#PHP" />
-            <element signature="e#2370#2429#0#PHP" />
-            <element signature="e#2434#2534#0#PHP" />
-            <element signature="e#2540#2572#0#PHP" />
-            <element signature="e#2577#2642#0#PHP" />
-            <element signature="e#2648#2710#0#PHP" />
-            <element signature="e#2715#2819#0#PHP" />
-            <element signature="e#2825#2857#0#PHP" />
-            <element signature="e#2862#2937#0#PHP" />
-            <element signature="e#2943#3010#0#PHP" />
-            <element signature="e#3015#3139#0#PHP" />
-            <element signature="e#3145#3175#0#PHP" />
-            <element signature="e#3180#3259#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,108 +1103,250 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repos/ExtraRepo.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderLineVM.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Converters/ModelHelpers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Coffee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repos/CoffeeRepo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="126">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding>
-            <element signature="e#35#66#0#PHP" expanded="true" />
-            <element signature="e#346#364#0#PHP" expanded="true" />
+            <element signature="e#42#2546#1#PHP" />
+            <element signature="e#73#378#0#PHP" />
+            <element signature="e#366#1528#0#PHP" />
+            <element signature="e#421#1501#0#PHP" />
+            <element signature="e#476#883#0#PHP" />
+            <element signature="e#646#869#0#PHP" />
+            <element signature="e#736#851#0#PHP" />
+            <element signature="e#894#1501#0#PHP" />
+            <element signature="e#955#1491#0#PHP" />
+            <element signature="e#1127#1477#0#PHP" />
+            <element signature="e#1217#1459#0#PHP" />
+            <element signature="e#1329#1437#0#PHP" />
+            <element signature="e#1534#1777#0#PHP" />
+            <element signature="e#1780#2544#0#PHP" />
+            <element signature="e#1851#2514#0#PHP" />
+            <element signature="e#1909#2504#0#PHP" />
+            <element signature="e#1980#2490#0#PHP" />
+            <element signature="e#2202#2472#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Extra.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Extra.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="273">
           <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="e#38#60#0#PHP" />
-            <element signature="e#148#561#0#PHP" />
-            <element signature="e#166#205#0#PHP" />
-            <element signature="e#366#404#0#PHP" />
-            <element signature="e#517#552#0#PHP" />
-            <element signature="e#657#690#0#PHP" />
-            <element signature="e#695#760#0#PHP" />
-            <element signature="e#766#825#0#PHP" />
-            <element signature="e#830#930#0#PHP" />
-            <element signature="e#936#966#0#PHP" />
-            <element signature="e#971#1052#0#PHP" />
-            <element signature="e#1058#1122#0#PHP" />
-            <element signature="e#1127#1259#0#PHP" />
-            <element signature="e#1265#1295#0#PHP" />
-            <element signature="e#1300#1371#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/CoffeeVM.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="273">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
-            <element signature="e#330#360#0#PHP" />
-            <element signature="e#365#440#0#PHP" />
-            <element signature="e#442#505#0#PHP" />
-            <element signature="e#516#640#0#PHP" />
-            <element signature="e#646#679#0#PHP" />
-            <element signature="e#684#749#0#PHP" />
-            <element signature="e#755#818#0#PHP" />
-            <element signature="e#823#927#0#PHP" />
-            <element signature="e#933#963#0#PHP" />
-            <element signature="e#968#1049#0#PHP" />
-            <element signature="e#1055#1123#0#PHP" />
-            <element signature="e#1128#1264#0#PHP" />
-            <element signature="e#1270#1302#0#PHP" />
-            <element signature="e#1307#1372#0#PHP" />
-            <element signature="e#1378#1440#0#PHP" />
-            <element signature="e#1445#1549#0#PHP" />
+            <element signature="e#64#98#0#PHP" />
+            <element signature="e#127#164#0#PHP" />
+            <element signature="e#189#223#0#PHP" />
+            <element signature="e#260#290#0#PHP" />
+            <element signature="e#295#368#0#PHP" />
+            <element signature="e#374#437#0#PHP" />
+            <element signature="e#442#561#0#PHP" />
+            <element signature="e#567#600#0#PHP" />
+            <element signature="e#605#670#0#PHP" />
+            <element signature="e#676#738#0#PHP" />
+            <element signature="e#743#846#0#PHP" />
+            <element signature="e#852#882#0#PHP" />
+            <element signature="e#887#968#0#PHP" />
+            <element signature="e#974#1041#0#PHP" />
+            <element signature="e#1046#1181#0#PHP" />
+            <element signature="e#1191#1710#0#PHP" />
+            <element signature="e#1291#1676#0#PHP" />
+            <element signature="e#1340#1471#0#PHP" />
+            <element signature="e#1374#1457#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderLineVM.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Order.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repos/CoffeeRepo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="639">
+          <caret line="69" column="45" lean-forward="true" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+          <folding>
+            <element signature="e#150#185#0#PHP" />
+            <element signature="e#237#323#0#PHP" />
+            <element signature="e#237#366#0#PHP" />
+            <element signature="e#237#408#0#PHP" />
+            <element signature="e#237#449#0#PHP" />
+            <element signature="e#511#546#0#PHP" />
+            <element signature="e#609#695#0#PHP" />
+            <element signature="e#609#738#0#PHP" />
+            <element signature="e#609#780#0#PHP" />
+            <element signature="e#609#821#0#PHP" />
+            <element signature="e#1052#1070#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Coffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Services/IOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Services/ICoffee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="23" selection-end-column="45" />
+          <folding>
+            <element signature="e#39#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/OrderVM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#99#1924#0#PHP" />
+            <element signature="e#119#153#0#PHP" />
+            <element signature="e#181#221#0#PHP" />
+            <element signature="e#247#279#0#PHP" />
+            <element signature="e#306#432#0#PHP" />
+            <element signature="e#458#599#0#PHP" />
+            <element signature="e#363#393#0#PHP" />
+            <element signature="e#398#469#0#PHP" />
+            <element signature="e#475#536#0#PHP" />
+            <element signature="e#541#655#0#PHP" />
+            <element signature="e#661#697#0#PHP" />
+            <element signature="e#702#769#0#PHP" />
+            <element signature="e#775#840#0#PHP" />
+            <element signature="e#845#951#0#PHP" />
+            <element signature="e#957#992#0#PHP" />
+            <element signature="e#997#1066#0#PHP" />
+            <element signature="e#1072#1137#0#PHP" />
+            <element signature="e#1142#1252#0#PHP" />
+            <element signature="e#1527#1557#0#PHP" />
+            <element signature="e#1562#1629#0#PHP" />
+            <element signature="e#1635#1694#0#PHP" />
+            <element signature="e#1699#1805#0#PHP" />
+            <element signature="e#1811#1842#0#PHP" />
+            <element signature="e#1847#1912#0#PHP" />
+            <element signature="e#1918#1977#0#PHP" />
+            <element signature="e#1982#2084#0#PHP" />
+            <element signature="e#1557#1922#0#PHP" />
+            <element signature="e#1657#1888#0#PHP" />
+            <element signature="e#1706#1837#0#PHP" />
+            <element signature="e#1740#1823#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/ViewModels/ExtraVM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="99" column="29" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="29" />
+          <folding>
+            <element signature="e#70#140#0#PHP" />
+            <element signature="e#159#326#0#PHP" />
+            <element signature="e#354#501#0#PHP" />
+            <element signature="e#527#641#0#PHP" />
+            <element signature="e#668#781#0#PHP" />
+            <element signature="e#1828#1859#0#PHP" />
+            <element signature="e#1864#1939#0#PHP" />
+            <element signature="e#1945#1986#0#PHP" />
+            <element signature="e#1991#2087#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Models/CoffeeModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <element signature="e#273#2755#0#PHP" />
+            <element signature="e#340#386#0#PHP" />
+            <element signature="e#409#448#0#PHP" />
+            <element signature="e#475#506#0#PHP" />
+            <element signature="e#534#687#0#PHP" />
+            <element signature="e#692#895#0#PHP" />
+            <element signature="e#902#1629#0#PHP" />
+            <element signature="e#944#1623#0#PHP" />
+            <element signature="e#1104#1224#0#PHP" />
+            <element signature="e#1265#1623#0#PHP" />
+            <element signature="e#1376#1613#0#PHP" />
+            <element signature="e#1512#1613#0#PHP" />
+            <element signature="e#1635#2751#0#PHP" />
+            <element signature="e#1690#2745#0#PHP" />
+            <element signature="e#1788#1891#0#PHP" />
+            <element signature="e#1906#2043#0#PHP" />
+            <element signature="e#2073#2196#0#PHP" />
+            <element signature="e#2211#2335#0#PHP" />
+            <element signature="e#2394#2745#0#PHP" />
+            <element signature="e#2505#2735#0#PHP" />
+            <element signature="e#2641#2735#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Models/OrderModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Resources/views/OrderSummary.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Resources/views/CoffeeSelection.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeBundle/Controller/CoffeeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#43#81#0#PHP" expanded="true" />
+            <element signature="e#1014#1676#0#PHP" />
+            <element signature="e#1714#1729#1#PHP" expanded="true" />
+            <element signature="e#1727#1762#0#PHP" expanded="true" />
+            <element signature="e#1978#2010#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

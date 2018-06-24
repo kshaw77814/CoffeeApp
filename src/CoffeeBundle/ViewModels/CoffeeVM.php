@@ -23,12 +23,6 @@ class CoffeeVM
     private $qtyAvailable= 0;
 
     /**
-     * @var double
-     *
-     */
-    private $cost = 0.00;
-
-    /**
      * @return int
      */
     public function getCoffeeId()
@@ -82,22 +76,18 @@ class CoffeeVM
         return $this;
     }
 
-    /**
-     * @return float
-     */
-    public function getCost()
+    public function getProperties(bool $excludeId = false)
     {
-        return $this->cost;
-    }
-
-    /**
-     * @param float $cost
-     * @return CoffeeVM
-     */
-    public function setCost($cost): CoffeeVM
-    {
-        $this->cost = $cost;
-        return $this;
+        $properties = array();
+        foreach ($this as $prop => $value) {
+            if ($excludeId) {
+                if (strpos($prop, 'Id') != false) {
+                    continue;
+                }
+            }
+            $properties[$prop] = $value;
+        }
+        return $properties;
     }
 
 

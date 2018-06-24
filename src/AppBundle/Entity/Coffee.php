@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entities;
+namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -36,11 +36,12 @@ class Coffee
     private $qtyAvailable= 0;
 
     /**
-     * @var double
+     * @var bool
      *
-     * @ORM\Column(name="cost", type="decimal",  precision=15, scale=2, nullable=false)
+     * @ORM\Column(name="archived", type="boolean", nullable=false)
+     *
      */
-    private $cost = 0.00;
+    private $archived = false;
 
     /**
      * @return string
@@ -79,20 +80,20 @@ class Coffee
     }
 
     /**
-     * @return float
+     * @return bool
      */
-    public function getCost()
+    public function getArchived()
     {
-        return $this->cost;
+        return $this->archived;
     }
 
     /**
-     * @param float $cost
+     * @param bool $archived
      * @return Coffee
      */
-    public function setCost($cost): Coffee
+    public function setArchived($archived): Coffee
     {
-        $this->cost = $cost;
+        $this->archived = $archived;
         return $this;
     }
 
