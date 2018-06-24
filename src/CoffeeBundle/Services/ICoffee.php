@@ -1,9 +1,8 @@
 <?php
 
-namespace CoffeeBundle\Models;
+namespace CoffeeBundle\Services;
 
 use CoffeeBundle\ViewModels\CoffeeVM;
-use CoffeeBundle\ViewModels\ExtraVM;
 use CoffeeBundle\ViewModels\OrderVM;
 
 interface ICoffee

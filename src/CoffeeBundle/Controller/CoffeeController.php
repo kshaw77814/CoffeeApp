@@ -3,7 +3,7 @@
 namespace CoffeeBundle\Controller;
 
 use AppBundle\Converters\ModelHelpers;
-use CoffeeBundle\Models\ICoffee;
+use CoffeeBundle\Services\ICoffee;
 use CoffeeBundle\ViewModels\OrderVM;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;

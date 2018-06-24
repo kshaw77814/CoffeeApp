@@ -19,7 +19,7 @@ services:
     CoffeeBundle\Models\CoffeeModel: ~
 
     # bind the service with the interface
-    CoffeeBundle\Interfaces\ICoffee: '@CoffeeBundle\Models\CoffeeModel'
+    CoffeeBundle\Services\ICoffee: '@CoffeeBundle\Models\CoffeeModel'
 
 
     # configure the controller custom services
